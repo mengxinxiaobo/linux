@@ -1,0 +1,5 @@
+这只是一个警告（不是致命错误，程序仍能编译），但非常值得注意，因为它揭示了一个真实的 Bug。
+报错内容
+passing argument 1 of 'flen' from incompatible pointer type
+  第25行：int n = flen(argv[1]);
+编译器在提醒你：flen 函数期望接收的参数类型是 const char *，但你实际传入的参数类型是 char **。
